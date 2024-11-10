@@ -1,0 +1,158 @@
+/* General Styles */
+
+.assigned-tasks-container {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1200px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #004085;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Search Section */
+.search-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-section input {
+  padding: 10px;
+  font-size: 14px;
+  width: 48%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.search-section input:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-section button:hover {
+  background-color: #004085;
+}
+
+/* Filter Section */
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px; /* Increased space between filter section and the tasks table */
+}
+
+.filter-section select {
+  padding: 10px;
+  font-size: 14px;
+  width: 48%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  margin-bottom: 15px; /* Space below the filter inputs */
+}
+
+.filter-section select:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.filter-section button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 15px; /* Space between filter button and inputs */
+}
+
+.filter-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f1f1f1;
+  color: #555;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+/* Action Button Styles */
+.mark-completed-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mark-completed-btn:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.completed-status {
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .assigned-tasks-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .search-section,
+  .filter-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-section input,
+  .search-section button,
+  .filter-section select,
+  .filter-section button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

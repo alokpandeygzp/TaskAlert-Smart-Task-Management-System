@@ -1,0 +1,72 @@
+/* src/screens/Register.css */
+.form-container {
+  margin: auto;
+  margin-top: 20px;
+  padding: 50px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+}
+
+.form-container form {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-container button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.manage-items{
+  display: flex;
+  flex-direction: row;
+}
+.login-wala-div {
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 80px;
+}
+
+.login-logo {
+  height: 500px;
+  width: 500px;
+  margin-bottom: 20px;
+  
+  background-color: #007bff;
+}

@@ -1,0 +1,136 @@
+/* Global Styles */
+/* Ensure body and html take up the full viewport height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex-grow: 1; /* Allow the main content to grow and fill available space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* App container - Flexbox to center content and fill remaining space */
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%; /* Fill available height */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Main content area */
+main {
+  flex-grow: 1; /* Take the remaining space between header and footer */
+  overflow: hidden; /* Ensure no scrolling */
+  padding: 20px;
+}
+
+/* Header, Footer, and Content adjustments */
+header {
+  height: 60px; /* Fixed height for the header */
+}
+
+footer {
+  height: 60px; /* Fixed height for the footer */
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Form Styling */
+.login-container, .register-container {
+  width: 100%;
+  max-width: 400px; /* Max width to prevent forms from becoming too large */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 0 auto; /* Center forms */
+}
+
+.login-container h2, .register-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.login-container form, .register-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container form div, .register-container form div {
+  margin-bottom: 10px;
+}
+
+.login-container form label, .register-container form label {
+  margin-bottom: 5px;
+}
+
+.login-container form input, .register-container form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-container form button, .register-container form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-container form button:hover, .register-container form button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Dashboard Styling */
+.dashboard {
+  padding: 20px;
+}
+
+.dashboard h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Stack the header content for mobile */
+  header {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .App {
+    padding: 10px;
+  }
+
+  .login-container, .register-container {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .login-container h2, .register-container h2 {
+    font-size: 1.2rem;
+  }
+}

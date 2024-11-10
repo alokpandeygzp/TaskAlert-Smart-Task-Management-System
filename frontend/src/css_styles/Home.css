@@ -1,0 +1,163 @@
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f7fa;
+}
+
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ensure it covers the full screen */
+  background-position: right;
+  background-size: cover;
+  backdrop-filter: blur();
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+/* The blur effect on the background */
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(8px);  /* Apply blur to the background */
+  -webkit-filter: blur(8px);
+  z-index: 1; /* Ensure it stays behind the content */
+}
+
+/* Styling for the text */
+.bg-text {
+  position: relative;
+  z-index: 2; /* Keeps the text above the blurred background */
+  top: 25%;
+  right: 5%; /* Adjust this to move the text box towards the right */
+  transform: translateY(-50%); /* Keep it vertically centered */
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5); /* Slight black overlay */
+  border-radius: 15px;
+  padding: 30px 40px;
+  max-width: 80%;
+  width: 35%;
+  height: 60%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease-in-out;
+}
+
+.bg-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.bg-text .tagline {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.bg-text p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+  transform: scale(1.1);
+}
+
+.cta-user {
+  background-color: #007bff;
+}
+
+.cta-user:hover {
+  background-color: #0056b3;
+}
+
+.cta-admin {
+  background-color: #28a745;
+}
+
+.cta-admin:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bg-text h1 {
+    font-size: 2rem;
+  }
+  .bg-text .tagline {
+    font-size: 1rem;
+  }
+  .cta-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+.bg-text h1, .bg-text p {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .bg-text {
+    padding: 20px 30px;
+  }
+  .bg-text h1 {
+    font-size: 2rem;
+  }
+  .bg-text .tagline {
+    font-size: 1rem;
+  }
+}

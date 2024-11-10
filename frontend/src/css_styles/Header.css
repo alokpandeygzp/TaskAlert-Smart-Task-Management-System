@@ -1,0 +1,162 @@
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Reduced padding */
+  background-color: #194cba; /* Lighter Blue background */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 60px; /* Fixed height for header */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Left side of the header (Logo and Name) */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px; /* Smaller logo */
+  height: 50px;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-size: 1.3rem; /* Smaller text size */
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Container for user menu */
+.user-menu {
+  display: flex;
+  align-items: center; /* Vertically align the items in the center */
+  gap: 15px; /* Space between the items */
+}
+
+
+/* User Greeting Styling */
+.user-greeting {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+/* Admin and general links container */
+.admin-links, .auth-links {
+  display: flex;
+  gap: 10px; /* Space between the links */
+}
+
+
+/* Logout Button */
+.logout-button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 6px 12px; /* Smaller padding */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Smooth transition for color, background, and transform */
+}
+
+/* Optional: Logout button hover effect */
+.logout-button:hover {
+  background-color: #ff1a1a;
+}
+
+
+
+
+
+
+
+
+
+/* Right side of the header (User Menu and Authentication Links) */
+.header-right {
+  display: flex; /* Use flexbox layout */
+  flex-direction: row; /* Ensure elements are in a row */
+  align-items: center; /* Vertically align items */
+  justify-content: flex-start; /* Align the items to the left */
+  gap: 15px; /* Add space between elements */
+  flex-wrap: nowrap; /* Prevent elements from wrapping */
+  white-space: nowrap; /* Prevent wrapping of content */
+}
+
+
+
+
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .header-right {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the left */
+    gap: 10px; /* Reduce the spacing between items on mobile */
+  }
+
+  .user-greeting {
+    margin-right: 0; /* Reset margin on mobile */
+  }
+}
+
+
+/* Menu Links (Home, Dashboard, etc.) */
+.menu-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease; /* Smooth transition for color, background, and transform */
+  padding: 8px 12px; /* Add padding to make it more clickable */
+  border-radius: 5px;
+}
+
+.menu-link:hover {
+  color: #f1f1f1; /* Change text color on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Add background color */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+}
+
+
+.logout-button:hover {
+  background-color: #c9302c; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge the logout button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Auth Links: Login, Register, etc. */
+.auth-links {
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+    height: auto; /* Allow header to auto size in mobile */
+  }
+
+  .header-left {
+    margin-bottom: 10px;
+  }
+
+  .menu-link {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+
+  .logout-button {
+    padding: 5px 10px;
+  }
+}
+

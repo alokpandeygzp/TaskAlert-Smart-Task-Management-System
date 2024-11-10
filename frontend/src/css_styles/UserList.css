@@ -1,0 +1,153 @@
+.user-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.user-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.user-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-form button:hover {
+  background-color: #0056b3;
+}
+
+.user-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-item {
+  border-bottom: 1px solid #ddd; /* Adds a bottom border for separation */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Ensures space between items */
+  align-items: center;
+}
+
+.user-view, .user-edit {
+  flex: 1;
+}
+
+.user-view button, .user-edit button {
+  margin-left: 10px; /* Adds spacing between buttons */
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-view button:hover, .user-edit button:hover {
+  background-color: #0056b3;
+}
+
+.user-view {
+  display: flex;
+  justify-content: space-between; /* Aligns content to the sides */
+  align-items: center; /* Aligns items vertically in the center */
+}
+
+.user-edit input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.user-edit {
+  display: flex;
+  flex-direction: column; /* Stacks the form elements vertically */
+  gap: 10px; /* Adds spacing between form elements */
+}
+
+.user-edit button {
+  align-self: flex-end; /* Aligns buttons to the right */
+}
+
+.user-view {
+  margin: 10px 0;
+}
+
+.user-view table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-view td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.user-view td:first-child {
+  width: 30%; /* Adjust as needed */
+}
+
+.user-view td:nth-child(2) {
+  width: 50%; /* Adjust as needed */
+}
+
+.user-view td:last-child {
+  width: 20%; /* Adjust as needed */
+  text-align: right; /* Align action buttons to the right */
+}
+
+.user-view h3 {
+  margin: 0;
+}
+
+.user-view p {
+  margin: 0;
+}
+
+.user-view button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.user-view button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}

@@ -1,0 +1,302 @@
+/* General styles */
+.task-management-container {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.task-management-header h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Search and Filter Section */
+.search-filter-section {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.select-box {
+  flex: 0 0 33%;  /* Ensures the select box takes up 33% width and doesn't grow or shrink */
+  min-width: 250px;  /* Keeps a minimum width of 250px */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box,
+.filter-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;  /* Ensures these grow to take up remaining space */
+  min-width: 250px;
+}
+
+.search-input,
+.filter-select,
+.search-filter-select {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Search and filter buttons */
+.search-btn,
+.apply-filter-btn {
+  width: 100px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search-btn:hover,
+.apply-filter-btn:hover {
+  background-color: #45a049;
+}
+
+/* Table styles */
+.task-management-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.task-management-table th,
+.task-management-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.task-management-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-button-task {
+  padding: 6px 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.delete-button-task:hover {
+  background-color: #d32f2f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+  .task-management-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .task-management-header {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-filter-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+
+  .search-box {
+    display: flex;
+    gap: 10px;
+  }
+  
+
+  .search-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+
+  .filter-box {
+    display: flex;
+    gap: 10px;
+  }
+  
+
+  .filter-select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 180px;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+
+  .task-management-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .task-management-table th,
+  .task-management-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .task-management-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .task-management-table tr:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  .delete-button-task {
+    padding: 8px 12px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .delete-button-task:hover {
+    background-color: #c82333;
+  }
+  
+
+  @media (max-width: 768px) {
+    .task-management-container {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    .task-management-header {
+      font-size: 24px;
+    }
+  
+    .search-filter-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .search-box,
+    .filter-box {
+      width: 100%;
+      gap: 5px;
+    }
+  
+    .search-input,
+    .filter-select {
+      width: 100%;
+    }
+  }
+  
+
+
+.apply-filter-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #28a745;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.apply-filter-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+.apply-filter-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+.search-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #28a745;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+.search-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+} */
